@@ -288,6 +288,9 @@ GEM
       sprockets-rails
       tilt
     securerandom (0.4.1)
+    seed_dump (3.3.1)
+      activerecord (>= 4)
+      activesupport (>= 4)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -364,6 +367,7 @@ DEPENDENCIES
   rspec-rails
   rubocop
   sass-rails (>= 6)
+  seed_dump
   selenium-webdriver (>= 4.0.0.rc1)
   spring
   turbolinks (~> 5)
