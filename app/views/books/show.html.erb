@@ -1,9 +1,20 @@
-<p id="notice"><%= notice %></p>
+<%= link_to("Back to List", books_path, class: 'back-link') %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
+<div class="books show">
+  <h2>Show task</h2>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+  <div class="actions">
+    <%= link_to('Edit', edit_book_path(@book)) %>
+    <%= link_to "Delete", delete_book_path(@book)  %>
+  </div>
+
+  <table summary="Book detail view">
+    <tr>
+      <th>Name</th>
+      <td><%= @book.title %></td>
+      <td><%= @book.author %></td>
+      <td><%= number_to_currency(@book.price) %></td>
+      <td><%= @book.published_date %></td>
+    </tr>
+
+</div>

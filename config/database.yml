@@ -23,10 +23,11 @@ default: &default
   host: localhost
   username: <%= ENV['DATABASE_USER'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
+  host: 127.0.0.1
 
 development:
   <<: *default
-  database: test_app_development
+  database: book_collection_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
