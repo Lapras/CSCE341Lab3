@@ -24,10 +24,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Use Node.js 16
-        uses: actions/setup-node@v4
-        with:
-          node-version: 16
       - name: Install postgres client
         run: sudo apt-get install libpq-dev
       - name: Install dependencies
