@@ -5,7 +5,7 @@ ruby '3.4.1'
 
 gem 'concurrent-ruby', '1.3.4'  
 
-gem 'rspec-rails' 
+gem 'rspec-rails', '~> 7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 7.1'
